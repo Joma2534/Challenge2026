@@ -80,11 +80,11 @@ h1 {
     }
 
     .description {
-        font-size: 1em;
+        font-size: 0,8em;
     }
 
     .btn {
-        font-size: 1em;
+        font-size: 0,8em;
         padding: 10px 20px;
     }
 }
