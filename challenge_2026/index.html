@@ -10,6 +10,7 @@
    
  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -55,13 +56,20 @@ Ce 2ème challenge à Dasle invite, les habitants à utiliser plus fréquemment 
  dans une commune, un quartier, un établissement scolaire, une entreprise, etc.
 </p><div style="text-align: center; margin-top: 10px; font-family: Arial, sans-serif; font-size: 16px; color: #555;">
     <p>
-        <!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com/" target="_blank" rel="noopener" title="Styles">
-<img src="https://www.hitwebcounter.com/counter/counter.php?page=21498517&amp;style=0006&amp;nbdigits=5&amp;type=ip" alt="Styles" decoding="async" style="border:0;max-width:100%;height:auto;" />
-</a>
-<!-- hitwebcounter Code END -->
+     <div style="text-align:center; margin-top:20px; font-size:18px;">
+    Visites : <span id="visits"></span>
+</div>
 
-    </div>
-
-</body>
+<script>
+fetch("https://api.counterapi.dev/v1/joma2534/challenge2026/up")
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("visits").innerText = data.count;
+  })
+  .catch(err => {
+    console.error("Erreur compteur :", err);
+  });
+</script>
+    
+    </body>
 </html>
