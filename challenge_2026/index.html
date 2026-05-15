@@ -6,7 +6,6 @@
     <title>Page d'accueil du 2ème challenge "Dans mon village, je teste le vélo"</title>
 
     <meta property="og:image" content="https://joma2534.github.io/Challenge2026/challenge_2026/image1.jpg">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -42,18 +41,9 @@
             Tous ces documents sont libres de droits et peuvent être réutilisés ou transformés pour créer une action autour du vélo,
             dans une commune, un quartier, un établissement scolaire, une entreprise, etc.
         </p>
+ <a href="http://www.mon-compteur.fr"><img src="http://www.mon-compteur.fr/html_c01genv2-248449-1" border="0" /></a>
 
-        <div style="text-align:center; margin-top:20px; font-size:18px; color:#333;">
-            Visites : <span id="visits">...</span>
-        </div>
 
-    </div> <!-- fermeture du container -->
 
-    <script>
-        fetch("https://api.countapi.xyz/update/joma2534_challenge2026/visits/?amount=1")
-            .then(res => res.json())
-            .then(res => {
-                document.getElementById("visits").innerText = res.value;
-            })
-            .catch(err => {
-                console.log("Erreur compteur :", err
+</body>
+</html>
