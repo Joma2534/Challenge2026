@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'accueil du 2ème challenge "Dans mon village, je teste le vélo"</title>
-    <meta property="og:image" content="https://joma2534.github.io/Challenge2026/challenge_2026/image1.jpg">  
-   
+
+    <meta property="og:image" content="https://joma2534.github.io/Challenge2026/challenge_2026/image1.jpg">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,29 +23,18 @@
             Dans mon village, je teste le vélo
         </h1>
 
-        <p style="margin-top: 10px; margin-bottom: 10px; font-family: 'Inter', 'Roboto', 'Open Sans', 'Lato', sans-serif; text-align: left; color: rgb(2, 80, 2)">
+        <p style="margin-top: 10px; margin-bottom: 10px; font-family: 'Inter', 'Roboto', 'Open Sans', 'Lato', sans-serif; text-align: left; color: rgb(2, 80, 2);">
             Ce 2ème challenge à Dasle invite les habitants à utiliser plus fréquemment les modes de transport doux et notamment la bicyclette pour les petits trajets, à la place de la voiture.
         </p>
 
         <div class="buttons">
-            <a href="flyer2026.pdf" target="_blank" class="btn">
-                📄 Le flyer du challenge
-            </a>
-
-            <a href="clip_video_2026.mp4" target="_blank" class="btn">
-                🎬 Le clip de présentation
-            </a>
-
-            <a href="https://joma-8.jimdosite.com/" target="_blank" class="btn">
-                🌐 Le réglement
-            </a>
-
-            <a href="dossier_2026.pdf" target="_blank" class="btn">
-                📁 Le dossier complet
-            </a>
+            <a href="flyer2026.pdf" target="_blank" class="btn">📄 Le flyer du challenge</a>
+            <a href="clip_video_2026.mp4" target="_blank" class="btn">🎬 Le clip de présentation</a>
+            <a href="https://joma-8.jimdosite.com/" target="_blank" class="btn">🌐 Le règlement</a>
+            <a href="dossier_2026.pdf" target="_blank" class="btn">📁 Le dossier complet</a>
         </div>
 
-        <p style="margin-top: 10px; margin-bottom: 10px; font-family: 'Segoe UI', Arial, sans-serif; text-align: left; color: rgb(2, 80, 2)">
+        <p style="margin-top: 10px; margin-bottom: 10px; font-family: 'Segoe UI', Arial, sans-serif; text-align: left; color: rgb(2, 80, 2);">
             Les études montrent que le vélo est bon pour la santé, moins polluant et souvent plus rapide que la voiture.
         </p>
 
@@ -54,24 +43,17 @@
             dans une commune, un quartier, un établissement scolaire, une entreprise, etc.
         </p>
 
-        <!-- 🔢 Compteur de visites -->
         <div style="text-align:center; margin-top:20px; font-size:18px; color:#333;">
             Visites : <span id="visits">...</span>
         </div>
 
-    </div>
+    </div> <!-- fermeture du container -->
 
-    <!-- Script du compteur -->
     <script>
-        fetch("https://api.counterapi.dev/v1/joma2534/challenge2026/up")
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById("visits").innerText = data.count;
+        fetch("https://api.countapi.xyz/update/joma2534_challenge2026/visits/?amount=1")
+            .then(res => res.json())
+            .then(res => {
+                document.getElementById("visits").innerText = res.value;
             })
             .catch(err => {
-                console.error("Erreur compteur :", err);
-            });
-    </script>
-
-</body>
-</html>
+                console.log("Erreur compteur :", err
