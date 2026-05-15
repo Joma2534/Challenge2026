@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'accueil du 2ème challenge "Dans mon village, je teste le vélo"</title>
- <meta property="og:image" content="https://joma2534.github.io/Challenge2026/challenge_2026/image1.jpg">  
+    <meta property="og:image" content="https://joma2534.github.io/Challenge2026/challenge_2026/image1.jpg">  
    
-   
- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,17 +15,16 @@
     <div class="container">
 
         <h1 style="text-align: center;
-           color: black
+           color: black;
            font-family: 'Inter', 'Roboto', 'Open Sans', 'Lato', sans-serif;
            font-size: 30px;
            font-weight: 700;
            margin-bottom: 10px;">
-  Dans mon village, je teste le vélo
-</h1>
-<p style="margin-top: 10px; margin-bottom: 10px; font-family: 'Inter', 'Roboto', 'Open Sans', 'Lato', sans-serif; text-align: left; color: rgb(2, 80, 2)">
-Ce 2ème challenge à Dasle invite, les habitants à utiliser plus fréquemment les modes de transport doux et notamment la bicyclette pour les petits trajets, à la place de la voiture. 
-             <br>   
-             
+            Dans mon village, je teste le vélo
+        </h1>
+
+        <p style="margin-top: 10px; margin-bottom: 10px; font-family: 'Inter', 'Roboto', 'Open Sans', 'Lato', sans-serif; text-align: left; color: rgb(2, 80, 2)">
+            Ce 2ème challenge à Dasle invite les habitants à utiliser plus fréquemment les modes de transport doux et notamment la bicyclette pour les petits trajets, à la place de la voiture.
         </p>
 
         <div class="buttons">
@@ -42,34 +40,38 @@ Ce 2ème challenge à Dasle invite, les habitants à utiliser plus fréquemment 
                 🌐 Le réglement
             </a>
 
-            <a href="dossier_2026.pdf"
-               target="_blank" class="btn">
+            <a href="dossier_2026.pdf" target="_blank" class="btn">
                 📁 Le dossier complet
             </a>
         </div>
 
+        <p style="margin-top: 10px; margin-bottom: 10px; font-family: 'Segoe UI', Arial, sans-serif; text-align: left; color: rgb(2, 80, 2)">
+            Les études montrent que le vélo est bon pour la santé, moins polluant et souvent plus rapide que la voiture.
+        </p>
 
-   <p style="margin-top: 10px; margin-bottom: 10px; font-family: 'Segoe UI', Arial, sans-serif; text-align: left; color: rgb(2, 80, 2)">
-                   Les études montrent que le vélo est bon pour la santé, moins polluant et souvent plus rapide que la voiture. <br> 
-                        <p style="margin-top: 10px; font-family: 'Segoe UI', Arial, sans-serif; font-style: italic; text-align: center; color: red;">
-  Tous ces documents sont libres de droits et peuvent être réutilisés ou transformés pour créer une action autour du vélo, 
- dans une commune, un quartier, un établissement scolaire, une entreprise, etc.
-</p><div style="text-align: center; margin-top: 10px; font-family: Arial, sans-serif; font-size: 16px; color: #555;">
-    <p>
-     <div style="text-align:center; margin-top:20px; font-size:18px;">
-    Visites : <span id="visits"></span>
-</div>
+        <p style="margin-top: 10px; font-family: 'Segoe UI', Arial, sans-serif; font-style: italic; text-align: center; color: red;">
+            Tous ces documents sont libres de droits et peuvent être réutilisés ou transformés pour créer une action autour du vélo,
+            dans une commune, un quartier, un établissement scolaire, une entreprise, etc.
+        </p>
 
-<script>
-fetch("https://api.counterapi.dev/v1/joma2534/challenge2026/up")
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("visits").innerText = data.count;
-  })
-  .catch(err => {
-    console.error("Erreur compteur :", err);
-  });
-</script>
-    
-    </body>
+        <!-- 🔢 Compteur de visites -->
+        <div style="text-align:center; margin-top:20px; font-size:18px; color:#333;">
+            Visites : <span id="visits">...</span>
+        </div>
+
+    </div>
+
+    <!-- Script du compteur -->
+    <script>
+        fetch("https://api.counterapi.dev/v1/joma2534/challenge2026/up")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("visits").innerText = data.count;
+            })
+            .catch(err => {
+                console.error("Erreur compteur :", err);
+            });
+    </script>
+
+</body>
 </html>
