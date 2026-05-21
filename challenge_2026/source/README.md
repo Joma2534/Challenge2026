@@ -1,5 +1,5 @@
-Ce dossier contient tous les documents sources pour creer le site en .doc ou .pub
---------------------------------------------------------------------------------
+Ce dossier contient tous les documents sources (en .doc ou .pub) pour créer le site 
+----------------------------------------------------------------------------------
 
 1) Selectionner le fichier
 2) Cliquer sur les 3 petits points à droite
