@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px; /* plus de marge en haut */
 }
 
 /* Conteneur */
@@ -21,7 +21,7 @@ body {
     background: #fff4f8; /* rose pastel très léger */
     max-width: 900px;
     width: 100%;
-    padding: 50px;
+    padding: 40px;
     border-radius: 25px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     text-align: center;
@@ -49,7 +49,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 /* Onglets */
@@ -59,7 +59,7 @@ h1 {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
-    font-weight: 600;
+    font-weight: normal;
     padding: 12px 25px;
     border-radius: 12px;
     transition: all 0.3s ease;
@@ -72,19 +72,25 @@ h1 {
     box-shadow: 0 10px 20px rgba(75, 74, 203, 0.4);
 }
 
-
 /* Mobile */
 @media (max-width: 768px) {
+
+    body {
+        padding: 0 10px; /* aucune marge en haut */
+    }
+
     .container {
-        padding: 30px 20px;
+        padding: 22px 15px; /* plus compact */
+        border-radius: 18px;
     }
 
     h1 {
-        font-size: 1.8em;
+        font-size: 1.7em;
+        margin-bottom: 18px;
     }
 
     .tab {
         font-size: 1em;
-        padding: 10px 18px;
+        padding: 10px 15px;
     }
 }
