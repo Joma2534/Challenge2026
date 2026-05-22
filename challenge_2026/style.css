@@ -55,8 +55,8 @@ h1 {
     background: #4caf50;
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 1em;
+    font-weight: normal;
     padding: 6px 30px;
     border-radius: 12px;
     transition: all 0.3s ease;
@@ -69,8 +69,8 @@ h1 {
     box-shadow: 0 10px 20px rgba(76, 175, 80, 0.4);
 }
 .btn-special {
-   background: #4b4acb;     /* bleu nuit */
-    color: #ffffff !important;
+  background: #4caf50;
+   color: white;
     font-size: 0.9em;
     font-style: italic;
     border: 1px solid #B7D0FF;  /* bordure bleu clair */
