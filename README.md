@@ -1,4 +1,4 @@
-Dans le projet challenge 2026, Vous trouverez ici :
+Dans le projet challenge_2026, Vous trouverez ici :
 ---------------------------------------------------
 
 - Le dossier "documents" contenant les fichiers présents sur le site
