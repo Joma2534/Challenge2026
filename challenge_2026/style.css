@@ -68,7 +68,16 @@ h1 {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(76, 175, 80, 0.4);
 }
+.btn-special {
+   background: #4b4acb;     /* bleu nuit */
+    color: #ffffff !important;
+    font-size: 0.9em;
+    font-style: italic;
+    border: 1px solid #B7D0FF;  /* bordure bleu clair */
+    padding: 8px 20px;
+    font-weight: normal !important;
 
+       
 /* Adaptation mobile */
 @media (max-width: 768px) {
     .container {
