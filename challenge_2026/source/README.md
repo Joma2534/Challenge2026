@@ -1,4 +1,4 @@
-Ce dossier contient tous les documents sources (en .doc ou .pub) utilisé pour créer ce site 
+Ce dossier contient tous les documents sources (en .doc .pub .xls) utilisé pour créer ce site 
 -------------------------------------------------------------------------------------------
 
 1) Sélectionner le fichier à récupérer
