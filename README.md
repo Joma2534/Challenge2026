@@ -1,6 +1,4 @@
 Vous trouverez ici :
-le repertoire Source contenantn le site internet
 
-Le repertoir docuement contenant les fichiers publishers
-
-le repeortrtroieqsnge
+- Le dossier "documents" contenant les fichiers présents sur le site
+- Le dossier "source" contenant les fichiers originaux en .doc et .pub
