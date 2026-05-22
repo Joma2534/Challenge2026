@@ -1,5 +1,5 @@
-Ce dossier contient tous les documents sources (en .doc ou .pub) pour créer le site 
-----------------------------------------------------------------------------------
+Ce dossier contient tous les documents sources (en .doc ou .pub) utilisé pour créer ce site 
+-------------------------------------------------------------------------------------------
 
 1) Sélectionner le fichier à récupérer
 2) Cliquer sur les 3 petits points à droite
