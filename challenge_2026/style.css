@@ -78,6 +78,33 @@ h1 {
     padding: 8px 20px;
     font-weight: normal !important;
 }
+/* Rubrique gagnants */
+.rubrique-gagnants {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 10px 0 25px 0; /* réduit l'espace au-dessus */
+    flex-wrap: nowrap; /* empêche de passer à la ligne */
+}
+
+.gagnant-link {
+    background: #4caf50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 1em;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.3);
+    white-space: nowrap; /* empêche le texte de se couper */
+}
+
+.gagnant-link:hover {
+    background: #388e3c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(76, 175, 80, 0.4);
+}
+
 
 /* Adaptation mobile */
 @media (max-width: 768px) {
