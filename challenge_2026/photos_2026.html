@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos du Challenge</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Galerie en colonne */
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .gallery img {
+            width: 90%;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>📸 Photos du Challenge</h1>
+
+               <!-- Galerie -->
+        <div class="gallery" id="gallery"></div>
+
+        <br><br>
+        <a href="index.html" class="btn">⬅ Retour</a>
+    </div>
+
+    <script>
+        // Liste des photos présentes dans le dossier /photos
+        const photos = [
+            "photo1.jpeg",
+            "photo2.jpeg",
+            "photo3.jpeg",
+            "photo4.jpeg"
+        ];
+
+        const gallery = document.getElementById("gallery");
+
+        // Affichage automatique des images du dossier
+        photos.forEach(file => {
+            const img = document.createElement("img");
+            img.src = "photos/" + file;
+            gallery.appendChild(img);
+        });
+    </script>
+
+</body>
+</html>
